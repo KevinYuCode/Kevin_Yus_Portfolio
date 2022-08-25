@@ -30,6 +30,9 @@ body {
 h1 {
   font-size: 5rem;
   font-weight: 500;
+  @media only screen and (max-width: 1300px) {
+    font-size: 4rem;
+}
 }
 @import "customStyles.scss";
 @import "container.scss";

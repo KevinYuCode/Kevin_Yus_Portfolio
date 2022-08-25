@@ -5,15 +5,28 @@
   h1 {
     font-family: "Silkscreen", "cursive";
     font-size: 7rem;
+    @media only screen and (max-width: 900px) {
+      font-size: 6.5rem;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 5.5rem;
+      min-height: 320px;
+    }
   }
   h3 {
     font-size: 2rem;
     color: rgba(0, 0, 0, 0.6);
     letter-spacing: 8px;
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 1.5rem;
+    }
   }
   a {
     padding: 1rem 3rem;
-    border:solid 2px rgba(0, 0, 0, 0.4);
+    border:solid 2px rgba(0, 0, 0, 0.6);
     // border:solid 2px rgba(4, 52, 119, 0.9);
     // background-color: rgba(4, 52, 119, 0.9);
     // color: white;

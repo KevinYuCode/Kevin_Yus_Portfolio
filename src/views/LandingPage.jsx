@@ -6,13 +6,15 @@ function LandingPage() {
   const btnVariants = {
     hidden: {
       opacity: 0,
-      y:"100vh"
+      originX:0,
+      scaleX:0,
     },
     visible: {
+      originX:0,
       opacity: 1,
-      y:"0vh",
+      scaleX:1,
       transition: {
-        delay:5,
+        delay:1,
         duration: 1,
         ease: "easeInOut",
       },

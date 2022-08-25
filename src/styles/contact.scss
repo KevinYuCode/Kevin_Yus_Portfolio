@@ -1,21 +1,29 @@
 .contact-container {
-  height: 40vh;
   p {
     text-align: center;
     max-width: 1000px;
     font-size: 1.3rem;
     line-height: 34px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
+    @media only screen and (max-width: 600px) {
+      font-size: 1.2rem;
+    }
   }
-  button {
-    border: solid 2px #059f76;
-    color: #059f76;
+  a {
+    border: solid 2px rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     font-size: 1.6rem;
     padding: 1rem 4rem;
     border-radius: 0.5rem;
     cursor: pointer;
   }
 }
-.contact{
-    row-gap: 1.5rem;
+.contact {
+  row-gap: 1.5rem;
+  h1 {
+    @media only screen and (max-width: 600px) {
+      width:100%;
+      text-align: left !important;
+    }
+  }
 }
