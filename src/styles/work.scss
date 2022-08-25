@@ -1,0 +1,76 @@
+.work-container {
+}
+.work {
+  row-gap: 3rem;
+}
+.work-title {
+}
+.work-content {
+  row-gap: 1.8rem;
+  width: 100%;
+}
+.work-list {
+  width: clamp(300px, auto, 1400px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  column-gap: 3rem;
+  button {
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0.3rem 0rem;
+    text-align: left;
+    // border-bottom: solid 2px #059f76;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
+}
+.work-details {
+  row-gap: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 100%;
+  .work-company {
+    color: #059f76;
+  }
+  .work-technologies {
+    column-gap: 1.5rem;
+    p {
+    //   color: rgba(5, 159, 118, 0.8);
+      font-weight: 700;
+    }
+  }
+  .work-time-line {
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  ul {
+    row-gap: 1.2rem;
+    padding-left: 2rem;
+    li {
+      text-align: left;
+      font-size: 1.1rem;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+.work-links {
+  margin-top: 2rem;
+  column-gap: 2rem;
+  a {
+    font-size: 2rem;
+    &:hover {
+      color: #059f76;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+* {
+  box-sizing: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+div,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+li,
+a {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background: transparent;
+}
+body {
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+@import "customStyles.scss";
+@import "container.scss";
+@import "landingPage.scss";
+@import "nav.scss";
+@import "about.scss";
+@import "work.scss";
+@import "projects.scss";
+@import "contact.scss";
+@import "footer.scss";
