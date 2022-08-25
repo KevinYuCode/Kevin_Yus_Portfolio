@@ -27,13 +27,16 @@
   a {
     padding: 1rem 3rem;
     border:solid 2px rgba(0, 0, 0, 0.6);
-    // border:solid 2px rgba(4, 52, 119, 0.9);
-    // background-color: rgba(4, 52, 119, 0.9);
-    // color: white;
     color:rgba(0, 0, 0, 0.6);
     border-radius: 0.5rem;
     font-weight: 500;
     font-size: 1.3rem;
     margin-top: 4rem;
+    @media only screen and (max-width: 600px) {
+      font-size: 1.1rem;
+    padding: .6rem 1.7rem;
+
+    }
+
   }
 }
