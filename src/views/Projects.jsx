@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../components/Container";
-import COOK_HACK from "../assets/COOK_HACK.png";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { PROJECTS } from "../data/projectData";
 function Projects() {

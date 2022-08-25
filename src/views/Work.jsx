@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Container from "../components/Container";
 import { WORK_EXPERIENCE } from "../data/workData";
-import IVORY_OMS from "../assets/IVORY_OMS.png";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 function Work() {
   const [workDetails, setWorkDetails] = useState(WORK_EXPERIENCE[0]);
