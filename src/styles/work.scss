@@ -14,6 +14,8 @@
 .work-content {
   row-gap: 1.8rem;
   width: 100%;
+  min-height: 550px;
+  justify-content: flex-start;
 }
 .work-list {
   width: clamp(300px, auto, 1400px);
@@ -53,6 +55,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  // min-height: 500px;
   .work-company {
     color: #059f76;
   }

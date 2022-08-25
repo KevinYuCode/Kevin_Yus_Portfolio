@@ -35,7 +35,9 @@
   width: 600px;
   row-gap: 1rem;
   justify-content: space-between;
-  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
   @media only screen and (max-width: 1300px) {
     width: 550px;
     row-gap: 0.5rem;
@@ -50,10 +52,15 @@
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     position: relative;
-    width: 90vw;
+    width:100%;
+    left:0;
+    right:0;
   }
   h2 {
     font-size: 2rem;
+    @media only screen and (max-width: 600px) {
+      font-size: 1.5rem;
+    }
   }
   p {
     font-size: 1.2rem;
@@ -69,7 +76,7 @@
 .project-tag-mirrored {
   @extend.project-tag;
   right: 0rem;
-  left: auto;
+  left: 0rem;
   align-items: flex-end;
   text-align: right;
   @media only screen and (max-width: 600px) {
@@ -100,7 +107,7 @@
       width: 600px;
     }
     @media only screen and (max-width: 600px) {
-      width: 90vw;
+      width:100%;
     }
   }
 }
@@ -121,13 +128,12 @@
   top: 1rem;
   font-size: 2rem;
   cursor: pointer;
-  width:100%;
-  padding-bottom: .5rem;
+  width: 100%;
+  padding-bottom: 0.5rem;
   @media only screen and (max-width: 1300px) {
     font-size: 1.7rem;
-
   }
-  a{
+  a {
     @media only screen and (max-width: 600px) {
       justify-content: flex-end;
     }
