@@ -2,7 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import Container from "../components/Container";
 import { motion } from "framer-motion";
-function LandingPage() {
+function LandingPage({ scrollTo }) {
   const btnVariants = {
     hidden: {
       opacity: 0,
@@ -25,7 +25,7 @@ function LandingPage() {
 
   return (
     <Container classProp="">
-      <div className="landing-page-container col-c-c">
+      <div id="landingPage" className="landing-page-container col-c-c">
         <TypeAnimation
           sequence={[
             2000,
@@ -37,9 +37,6 @@ function LandingPage() {
             30000,
             "",
             1000,
-            () => {
-              console.log("Done typing!"); // Place optional callbacks anywhere in the array
-            },
           ]}
           wrapper="h1"
           cursor={true}
@@ -47,9 +44,16 @@ function LandingPage() {
           speed={1}
         ></TypeAnimation>
         <h3>Computer Engineer & Full-Stack Developer</h3>
-        <motion.a href="" variants={btnVariants} initial={"hidden"} animate={"visible"}>
+        <motion.button
+          onClick={() => {
+            scrollTo("about");
+          }}
+          variants={btnVariants}
+          initial={"visible"}
+          animate={"visible"}
+        >
           Learn More
-        </motion.a>
+        </motion.button>
       </div>
     </Container>
   );

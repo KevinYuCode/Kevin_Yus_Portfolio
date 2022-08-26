@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Profile_Picture from "../assets/Profile_Picture.jpg";
 function about() {
   return (
-    <div className="about-container full-s-h">
+    <div id="about" className="about-container full-s-h">
       <Container classProp="about">
         <div className="about-title row-fs-c">
           <h1>About Me</h1>

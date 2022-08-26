@@ -1,8 +1,8 @@
 .about-container {
+  padding-top: 3rem;
   @media only screen and (max-width: 600px) {
     height: 100%;
     padding:0 0 5rem 0;
-
   }
 }
 .about {
@@ -11,7 +11,7 @@
   grid-template-rows: auto;
   justify-items: flex-start;
   align-items: flex-start;
-  align-content: center;
+  align-content: flex-start;
   grid-row-gap: 1rem;
   grid-column-gap: 6rem;
   @media only screen and (max-width: 1100px) {

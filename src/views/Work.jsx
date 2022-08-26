@@ -5,7 +5,7 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 function Work() {
   const [workDetails, setWorkDetails] = useState(WORK_EXPERIENCE[0]);
   return (
-    <div className="work-container full-s-h">
+    <div id="work" className="work-container full-s-h">
       <Container classProp="work col-c-fs">
         {/* Work Title */}
         <div className="work-title row-fs-c">

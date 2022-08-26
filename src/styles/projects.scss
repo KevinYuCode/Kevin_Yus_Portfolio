@@ -1,6 +1,7 @@
 .projects-container {
   position: relative;
-  top: 6rem;
+  padding-top: 3rem;
+
 }
 .projects {
   @media only screen and (max-width: 600px) {
@@ -38,7 +39,7 @@
   -webkit-backdrop-filter: blur(9.8px);
   border: 1px solid rgba(255, 255, 255, 1);
   z-index: 1;
-  width: 600px;
+  width: 800px;
   row-gap: 1rem;
   justify-content: space-between;
   -moz-box-sizing: border-box;
@@ -69,6 +70,13 @@
       font-weight: bold;
     }
   }
+  h3 {
+    color: #059f76;
+    font-size: 1.3rem;
+    @media only screen and (max-width: 1300px) {
+      font-size: 1.2rem;
+    }
+  }
   p {
     font-size: 1.2rem;
     line-height: 30px;
@@ -83,7 +91,7 @@
 .project-tag-mirrored {
   @extend.project-tag;
   right: 0rem;
-  left: 0rem;
+  left: auto;
   align-items: flex-end;
   text-align: right;
   @media only screen and (max-width: 600px) {
@@ -92,7 +100,7 @@
   }
 }
 .project-image {
-  --imageHeight: 7rem;
+  --imageHeight: 9rem;
   top: var(--imageHeight);
   position: relative;
   // left: 20rem;
