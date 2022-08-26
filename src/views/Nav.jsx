@@ -1,12 +1,16 @@
 import React from "react";
 import Container from "../components/Container";
-import GrMenu from "react-icons";
+import { BiMenuAltRight } from "react-icons/bi";
+import { CgClose } from "react-icons/cg";
 function Nav({ scrollTo }) {
   return (
     <nav className="nav-container">
       <Container classProp="nav row-sb-c">
         <div className="nav-toggle">
-          <GrMenu />
+          <BiMenuAltRight />
+        </div>
+        <div className="nav-close">
+          <CgClose />
         </div>
         <div
           className="nav-logo row-c-c"

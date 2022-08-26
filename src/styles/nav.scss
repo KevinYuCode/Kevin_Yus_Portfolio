@@ -10,11 +10,35 @@
   -webkit-backdrop-filter: blur(12.8px);
   z-index: 5;
   @media only screen and (max-width: 900px) {
-    bottom:0;
+    bottom: 0;
     height: 100%;
+  backdrop-filter: blur(12.8px);
+
   }
 }
-.nav{
+.nav-toggle {
+  display: none;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3.5rem;
+  
+  @media only screen and (max-width: 900px) {
+    // display: flex;
+  }
+}
+.nav-close {
+  display: none;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3.5rem;
+
+  @media only screen and (max-width: 900px) {
+    display: flex;
+  }
+}
+.nav {
   @media only screen and (max-width: 900px) {
     flex-direction: column;
     row-gap: 3rem;
@@ -26,16 +50,16 @@
 .nav-logo {
   height: 100%;
   @media only screen and (max-width: 900px) {
-    height:auto;
+    height: auto;
   }
   h1 {
     font-family: "Silkscreen", "cursive";
     font-size: 2.1rem;
-    width:auto;
+    width: auto;
     height: auto;
     cursor: pointer;
     @media only screen and (max-width: 900px) {
-      font-size: 6rem ;
+      font-size: 6rem;
     }
   }
 }
@@ -44,10 +68,10 @@
   column-gap: 5rem;
   @media only screen and (max-width: 900px) {
     flex-direction: column;
-    width:100%;
+    width: 100%;
     justify-content: flex-start;
     row-gap: 4rem;
-    height:auto;
+    height: auto;
   }
   button,
   a {
@@ -55,7 +79,7 @@
     font-weight: 500;
     cursor: pointer;
     @media only screen and (max-width: 900px) {
-      font-size: 2.5rem ;
+      font-size: 2.5rem;
     }
   }
   a:nth-child(5) {
@@ -67,7 +91,7 @@
     background-color: rgba(0, 0, 0, 0.05);
 
     &:hover {
-      color:#059f76;
+      color: #059f76;
     }
   }
 }
