@@ -6,7 +6,7 @@ import Work from "./views/Work";
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
 import { animateScroll as scroll } from "react-scroll";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 function App() {
   const isIpad = useMediaQuery({ query: "(max-width: 900px)" });
@@ -17,7 +17,9 @@ function App() {
     if (isIpad) setNavOn(false);
   };
   const [navOn, setNavOn] = useState(false);
-
+  useEffect(() => {
+    if (!isIpad) setNavOn(true);
+  }, [isIpad]);
   return (
     <div className="App">
       <Nav scrollTo={scrollTo} toggleNav={setNavOn} navOn={navOn} isIpad={isIpad} />

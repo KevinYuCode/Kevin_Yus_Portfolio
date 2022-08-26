@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Container from "../components/Container";
 import { BiMenuAltRight } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 import { motion, AnimatePresence } from "framer-motion";
 function Nav({ scrollTo, navOn, toggleNav, isIpad }) {
-
   const navVariants = {
     hidden: {
       x: "-100vw",
@@ -21,9 +20,7 @@ function Nav({ scrollTo, navOn, toggleNav, isIpad }) {
       },
     },
   };
-  useEffect(() => {
-    if (!isIpad) toggleNav(true);
-  }, [isIpad]);
+
   return (
     <>
       <div
