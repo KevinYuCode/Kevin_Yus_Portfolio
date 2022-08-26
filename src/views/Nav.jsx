@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../components/Container";
-import RESUME from "../data/Kevin_Yus_Resume.pdf";
 function Nav({ scrollTo }) {
   return (
     <nav className="nav-container">
@@ -42,7 +41,7 @@ function Nav({ scrollTo }) {
           >
             Contact
           </button>
-          <a href={RESUME} download="Kevin_Yus_Resume">
+          <a href="Kevin_Yus_Resume.pdf" download="Kevin_Yus_Resume">
             Resume
           </a>
         </div>
