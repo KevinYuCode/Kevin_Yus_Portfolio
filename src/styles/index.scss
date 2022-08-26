@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 h1,
@@ -23,6 +23,7 @@ a {
 a {
   text-decoration: none;
   color: inherit;
+  color: black;
 }
 button {
   border: none;
@@ -35,7 +36,7 @@ h1 {
   font-weight: 500;
   @media only screen and (max-width: 1300px) {
     font-size: 2rem;
-}
+  }
 }
 @import "customStyles.scss";
 @import "container.scss";
