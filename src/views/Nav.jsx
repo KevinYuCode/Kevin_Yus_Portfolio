@@ -1,9 +1,13 @@
 import React from "react";
 import Container from "../components/Container";
+import GrMenu from "react-icons";
 function Nav({ scrollTo }) {
   return (
     <nav className="nav-container">
-      <Container classProp="row-sb-c">
+      <Container classProp="nav row-sb-c">
+        <div className="nav-toggle">
+          <GrMenu />
+        </div>
         <div
           className="nav-logo row-c-c"
           onClick={() => {

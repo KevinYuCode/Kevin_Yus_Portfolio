@@ -9,25 +9,54 @@
   backdrop-filter: blur(9.8px);
   -webkit-backdrop-filter: blur(12.8px);
   z-index: 5;
+  @media only screen and (max-width: 900px) {
+    bottom:0;
+    height: 100%;
+  }
+}
+.nav{
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: center;
+    height: 95vh;
+    overflow-y: scroll;
+  }
 }
 .nav-logo {
   height: 100%;
+  @media only screen and (max-width: 900px) {
+    height:auto;
+  }
   h1 {
     font-family: "Silkscreen", "cursive";
     font-size: 2.1rem;
     width:auto;
     height: auto;
     cursor: pointer;
+    @media only screen and (max-width: 900px) {
+      font-size: 6rem ;
+    }
   }
 }
 .nav-links {
   width: 45vw;
   column-gap: 5rem;
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    width:100%;
+    justify-content: flex-start;
+    row-gap: 4rem;
+    height:auto;
+  }
   button,
   a {
     font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
+    @media only screen and (max-width: 900px) {
+      font-size: 2.5rem ;
+    }
   }
   a:nth-child(5) {
     border: 2px solid black;
