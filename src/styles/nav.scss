@@ -12,8 +12,7 @@
   @media only screen and (max-width: 900px) {
     bottom: 0;
     height: 100%;
-  backdrop-filter: blur(12.8px);
-
+    backdrop-filter: blur(12.8px);
   }
 }
 .nav-toggle {
@@ -22,21 +21,14 @@
   top: 2rem;
   right: 2rem;
   font-size: 3.5rem;
-  
+  cursor: pointer;
+
   @media only screen and (max-width: 900px) {
     // display: flex;
   }
 }
 .nav-close {
-  display: none;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  font-size: 3.5rem;
-
-  @media only screen and (max-width: 900px) {
-    display: flex;
-  }
+  @extend .nav-toggle;
 }
 .nav {
   @media only screen and (max-width: 900px) {
