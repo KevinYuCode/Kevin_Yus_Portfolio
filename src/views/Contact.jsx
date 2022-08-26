@@ -1,5 +1,7 @@
 import React from "react";
 import Container from "../components/Container";
+import Footer from "../views/Footer";
+
 function Contact() {
   return (
     <div id="contact" className="contact-container full-s-h">
@@ -11,6 +13,7 @@ function Contact() {
           and make new friends :){" "}
         </p>
         <a href="mailto: yu.kevin2002@gmail.com">Say Hi</a>
+        <Footer />
       </Container>
     </div>
   );

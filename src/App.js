@@ -5,25 +5,27 @@ import About from "./views/About";
 import Work from "./views/Work";
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
-import Footer from "./views/Footer";
 import { animateScroll as scroll } from "react-scroll";
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 function App() {
+  const isIpad = useMediaQuery({ query: "(max-width: 900px)" });
+
   const scrollTo = (pageId) => {
     let page = document.getElementById(pageId);
-    console.log(page.offsetTop);
-    // window.scrollTo(0, page.offsetTop);
     scroll.scrollTo(page.offsetTop - 70);
+    if (isIpad) setNavOn(false);
   };
+  const [navOn, setNavOn] = useState(false);
 
   return (
     <div className="App">
-      <Nav scrollTo={scrollTo} />
+      <Nav scrollTo={scrollTo} toggleNav={setNavOn} navOn={navOn} isIpad={isIpad} />
       <LandingPage scrollTo={scrollTo} />
       <About />
       <Work />
       <Projects />
       <Contact />
-      <Footer />
     </div>
   );
 }

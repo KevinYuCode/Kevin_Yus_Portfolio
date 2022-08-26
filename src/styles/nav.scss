@@ -17,13 +17,20 @@
 }
 .nav-toggle {
   display: none;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  font-size: 3.5rem;
-  cursor: pointer;
-
   @media only screen and (max-width: 900px) {
+    display: flex;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3.5rem;
+    z-index: 5;
+    cursor: pointer;
+
+  }
+  @media only screen and (max-width: 600px) {
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 3rem;
     // display: flex;
   }
 }
@@ -72,6 +79,10 @@
     cursor: pointer;
     @media only screen and (max-width: 900px) {
       font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+
     }
   }
   a:nth-child(5) {

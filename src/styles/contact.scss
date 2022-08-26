@@ -1,6 +1,6 @@
 .contact-container {
   @media only screen and (max-width: 600px) {
-    padding:3rem 0;
+    padding: 3rem 0;
   }
 
   p {
@@ -28,6 +28,8 @@
 }
 .contact {
   row-gap: 1.5rem;
+  position: relative;
+
   h1 {
     @media only screen and (max-width: 600px) {
       width: 100%;

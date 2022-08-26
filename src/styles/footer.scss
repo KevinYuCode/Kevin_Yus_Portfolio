@@ -1,5 +1,7 @@
-.footer-container{
-    height:10vh;
-    padding-bottom: 1rem;
-    color:rgba(0,0,0,.5)
+.footer-container {
+  // height:10vh;
+  position: absolute;
+  bottom: 80px;
+  padding-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.5);
 }
