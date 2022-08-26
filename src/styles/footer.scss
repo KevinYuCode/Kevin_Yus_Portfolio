@@ -4,4 +4,7 @@
   bottom: 80px;
   padding-bottom: 1rem;
   color: rgba(0, 0, 0, 0.5);
+  @media only screen and (max-width: 600px) {
+    bottom: 0px;
+  }
 }
