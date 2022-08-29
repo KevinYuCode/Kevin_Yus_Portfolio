@@ -10,7 +10,7 @@ export const PROJECTS = [
     ranking: "3rd Place Overall",
     image: MONEY_HACK,
     gitHub: "https://github.com/KevinYuCode/shacks-2022",
-    website: "",
+    website: "https://share.vidyard.com/watch/FsbPxzdyU6JwjW1QH4mXEg?",
   },
   {
     name: "COOK HACK",
@@ -20,7 +20,7 @@ export const PROJECTS = [
     ranking: "Winner of Hammer of the Gods Prize",
     image: COOK_HACK,
     gitHub: "https://github.com/KevinYuCode/QHACKS_2022",
-    website: "",
+    website: "https://youtu.be/NfVUf_v3Qko",
   },
   {
     name: "NOTE HACK",
@@ -30,6 +30,6 @@ export const PROJECTS = [
     ranking: "3rd Place Overall",
     image: NOTE_HACK,
     gitHub: "https://github.com/KevinYuCode/QHACKS_2022",
-    website: "",
+    website: "https://youtu.be/crmpLH82Q0Q",
   },
 ];

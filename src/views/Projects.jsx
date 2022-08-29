@@ -16,22 +16,14 @@ function Projects() {
               <h3>{project.ranking}</h3>
               <p>{project.description}</p>
               {/* Github or Website */}
-              <div className="project-links">
+              <div className={`${i % 2 === 0 ? "row-fe-c" : "row-fs-c"} project-links`}>
                 {project.gitHub && (
-                  <a
-                    href={project.github}
-                    target="notarget"
-                    className={`${i % 2 === 0 ? "row-fe-c" : "row-fs-c"}`}
-                  >
+                  <a href={project.github} target="notarget">
                     <FiGithub />
                   </a>
                 )}
                 {project.website && (
-                  <a
-                    href={project.website}
-                    target="notarget"
-                    className={`${i % 2 === 0 ? "row-fe-c" : "row-fs-c"}`}
-                  >
+                  <a href={project.website} target="notarget">
                     <FiExternalLink />
                   </a>
                 )}
