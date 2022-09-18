@@ -51,6 +51,7 @@ function LandingPage({ scrollTo }) {
           variants={btnVariants}
           initial={"visible"}
           animate={"visible"}
+          className="landing-page-learn-more"
         >
           Learn More
         </motion.button>

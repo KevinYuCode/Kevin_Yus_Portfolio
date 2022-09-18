@@ -94,17 +94,19 @@
     @media only screen and (max-width: 600px) {
       font-size: 1.2rem;
     }
+    outline:none;
+    
   }
   a:nth-child(5) {
     border: 2px solid black;
     padding: 0.5rem;
     box-sizing: border-box;
     border-radius: 0.2rem;
-    transition: color 0.4s;
+    transition: all 0.4s;
     background-color: rgba(0, 0, 0, 0.05);
-
     &:hover {
-      color: #059f76;
+      background-color: rgba(0,0,0,.2);
+      color: white;
     }
   }
 }

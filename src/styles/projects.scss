@@ -4,6 +4,7 @@
 }
 .projects {
   @media only screen and (max-width: 600px) {
+    row-gap: 2rem;
   }
 }
 .projects-title {
@@ -22,6 +23,8 @@
     justify-content: flex-start;
     margin-bottom: 0rem;
     margin-top: 0;
+    row-gap: 1rem;
+
   }
 }
 .project-tag {
@@ -65,15 +68,15 @@
   h2 {
     font-size: 2rem;
     @media only screen and (max-width: 600px) {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: bold;
     }
   }
   h3 {
     color: #059f76;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     @media only screen and (max-width: 1300px) {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   p {
@@ -83,7 +86,9 @@
     @media only screen and (max-width: 1300px) {
       font-size: 1.1rem;
     }
-    @media only screen and (max-width: 1100px) {
+    @media only screen and (max-width: 600px) {
+      font-size: 1rem;
+      line-height: 23px;
     }
   }
 }
@@ -107,7 +112,7 @@
     top: 8.5rem;
   }
   @media only screen and (max-width: 600px) {
-    top: -3rem;
+    top: 0rem;
   }
   img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -134,7 +139,7 @@
     top: 8.5rem;
   }
   @media only screen and (max-width: 600px) {
-    top: -3rem;
+    top: 0rem;
   }
 }
 .project-links {
