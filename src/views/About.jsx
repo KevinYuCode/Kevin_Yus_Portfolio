@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../components/Container";
-import Profile_Picture from "../assets/Profile_Picture.jpg";
+import Profile_Picture from "../assets/Profile_Picture.JPG";
 function about() {
   return (
     <div id="about" className="about-container full-s-h">
