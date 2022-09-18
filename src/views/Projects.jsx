@@ -18,7 +18,7 @@ function Projects() {
               {/* Github or Website */}
               <div className={`${i % 2 === 0 ? "row-fe-c" : "row-fs-c"} project-links`}>
                 {project.gitHub && (
-                  <a href={project.github} target="notarget">
+                  <a href={project.gitHub} target="notarget">
                     <FiGithub />
                   </a>
                 )}
