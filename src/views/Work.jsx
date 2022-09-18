@@ -22,7 +22,7 @@ function Work() {
                 onClick={() => {
                   setWorkDetails(work);
                 }}
-                style={{borderBottom: workDetails.company === work.company? "solid 2px #059f76": "none" }}
+                style={{borderBottom: workDetails.company === work.company? "solid 2px #059f76": "solid 2px white" }}
               >
                 {work.company}
               </button>
