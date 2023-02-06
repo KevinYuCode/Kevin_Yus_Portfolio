@@ -17,6 +17,26 @@ export const PROJECTS = [
     website: "https://www.youtube.com/watch?v=RdP4LlhQj1Y&feature=youtu.be",
   },
   {
+    name: "Mind Hack",
+    description:
+      "Mind Hack is a web application that aims to utilize the power of OpenAi to provide step-by-step actions towards improving mental health and productivity while giving currated suggestions on what to improve on next.",
+    date: "Nov 5 – 6, 2023",
+    ranking: "Mind Hack QHacks 2023 Submission",
+    image: MIND_HACK,
+    gitHub: "https://github.com/KevinYuCode/qhacks-2023",
+    website: "https://mindhack.samthibault.live/",
+  },
+  {
+    name: "Link Hack",
+    description:
+      "Link Hack is a web application used to help academic staff and students validate the reliability of their potential sources. LinkHack uses Natural Language Processing to summarize the contents of any website. In addition, it uses Beautiful Soup to scrape the article for relevant data and formats it into MLA format.",
+    date: "Nov 5 – 6, 2023",
+    ranking: "Education Category Winner @NewHacks",
+    image: LINK_HACK,
+    gitHub: "https://github.com/KevinYuCode/newhacks-2022",
+    website: "https://devpost.com/software/linkhack",
+  },
+  {
     name: "MONEY HACK",
     description:
       "MoneyHack is a Financial Advice / Budgeting web application. Its focus is to help financially illiterate individuals learn more about investing opportunities and their spending habits to improve their financial literacy through actionable and personalized advice. The application implements the user's monthly financial statements, salary, age, and amount of debt to provide a specialized financial analysis.",
@@ -45,25 +65,5 @@ export const PROJECTS = [
     image: NOTE_HACK,
     gitHub: "https://github.com/KevinYuCode/QHACKS_2022",
     website: "https://youtu.be/crmpLH82Q0Q",
-  },
-  {
-    name: "Link Hack",
-    description:
-      "Link Hack is a web application used to help academic staff and students validate the reliability of their potential sources. LinkHack uses Natural Language Processing to summarize the contents of any website. In addition, it uses Beautiful Soup to scrape the article for relevant data and formats it into MLA format.",
-    date: "Nov 5 – 6, 2023",
-    ranking: "Education Category Winner @NewHacks",
-    image: LINK_HACK,
-    gitHub: "https://github.com/KevinYuCode/newhacks-2022",
-    website: "https://devpost.com/software/linkhack",
-  },
-  {
-    name: "Mind Hack",
-    description:
-      "Mind Hack is a web application that aims to utilize the power of OpenAi to provide step-by-step actions towards improving mental health and productivity while giving currated suggestions on what to improve on next.",
-    date: "Nov 5 – 6, 2023",
-    ranking: "Mind Hack QHacks 2023 Submission",
-    image: MIND_HACK,
-    gitHub: "https://github.com/KevinYuCode/qhacks-2023",
-    website: "https://devpost.com/software/mindhack-ai0qcf",
   },
 ];
