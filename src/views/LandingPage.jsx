@@ -43,6 +43,7 @@ function LandingPage({ scrollTo }) {
           repeat={Infinity}
           speed={1}
         ></TypeAnimation>
+
         <h3>Computer Engineer & Full-Stack Developer</h3>
         <motion.button
           onClick={() => {

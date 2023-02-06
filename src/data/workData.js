@@ -1,5 +1,18 @@
 export const WORK_EXPERIENCE = [
   {
+    company: "DISTRIBUTIVE",
+    position: "Frontend Developer",
+    timeline: "February 2023 - Present",
+    technologies: ["React.js", "Tailwind.css", "Sass", "SEO"],
+    highlights: [
+      "Designing and developing the new front-end website for https://kingsds.network/",
+      "Using React.js framework to develop the front-end features",
+      "Using Tailwind framework to style and layout the website components",
+    ],
+    github: "",
+    website: "https://kingsds.network/",
+  },
+  {
     company: "IVORY OMS",
     position: "Co-Founder & Chief Technology Officer",
     timeline: "May 2022 - September 2022",
@@ -24,7 +37,7 @@ export const WORK_EXPERIENCE = [
       "Analyzed design functionality, improved site's responsiveness and optimized user experience throughout the site",
     ],
     github: "",
-    website: "https://www.qtma.ca/",
+    website: "https://www.qmind.ca/",
   },
   {
     company: "QTMA",

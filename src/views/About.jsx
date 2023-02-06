@@ -15,14 +15,14 @@ function about() {
             grade when I made an LED turn on with some copied and pasted code I
             found online that I uploaded to a microcontroller. Since that day, I
             developed a passion for computer technology, which has led me to
-            explore topics such as full-stack development, electronics, computer
+            explore topics such as web-development, electronics, computer
             networks, and even entrepreneurship in the tech industry.
           </p>
           <p>
             Fast forward to today, I have had the opportunity to exercise my
             technical skills through designing and developing websites for
-            clients and committees, competing and placing in hackathons, working
-            in the startup industry, as well as building my own tech startup.
+            clients and committees, competing in hackathons, working in the
+            startup industry, as well as building my own small tech startup.
           </p>
           <p className="about-technologies">
             Here are a few technologies I've been working with recently:
@@ -32,9 +32,11 @@ function about() {
               "React.js/Next.js",
               "Node.js",
               "Python",
-              "CSS",
+              "Tailwind",
               "Firebase",
-              "GCP",
+              "Linux",
+              "C/C++",
+              "Verilog",
             ].map((tech) => (
               <li>{tech}</li>
             ))}

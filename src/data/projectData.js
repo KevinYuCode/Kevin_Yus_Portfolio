@@ -1,7 +1,10 @@
 import COOK_HACK from "../assets/COOK_HACK.png";
 import NOTE_HACK from "../assets/NOTE_HACK.png";
 import MONEY_HACK from "../assets/MONEY_HACK.png";
-import HACKTO from "../assets/HACKTO.png"
+import HACKTO from "../assets/HACKTO.png";
+import LINK_HACK from "../assets/LINK_HACK.png";
+import MIND_HACK from "../assets/MIND_HACK.png";
+
 export const PROJECTS = [
   {
     name: "HACKTO",
@@ -42,5 +45,25 @@ export const PROJECTS = [
     image: NOTE_HACK,
     gitHub: "https://github.com/KevinYuCode/QHACKS_2022",
     website: "https://youtu.be/crmpLH82Q0Q",
+  },
+  {
+    name: "Link Hack",
+    description:
+      "Link Hack is a web application used to help academic staff and students validate the reliability of their potential sources. LinkHack uses Natural Language Processing to summarize the contents of any website. In addition, it uses Beautiful Soup to scrape the article for relevant data and formats it into MLA format.",
+    date: "Nov 5 – 6, 2023",
+    ranking: "Education Category Winner @NewHacks",
+    image: LINK_HACK,
+    gitHub: "https://github.com/KevinYuCode/newhacks-2022",
+    website: "https://devpost.com/software/linkhack",
+  },
+  {
+    name: "Mind Hack",
+    description:
+      "Mind Hack is a web application that aims to utilize the power of OpenAi to provide step-by-step actions towards improving mental health and productivity while giving currated suggestions on what to improve on next.",
+    date: "Nov 5 – 6, 2023",
+    ranking: "Mind Hack QHacks 2023 Submission",
+    image: MIND_HACK,
+    gitHub: "https://github.com/KevinYuCode/qhacks-2023",
+    website: "https://devpost.com/software/mindhack-ai0qcf",
   },
 ];

@@ -5,6 +5,7 @@ import About from "./views/About";
 import Work from "./views/Work";
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
+import LoadingPage from "./views/LoadingPage";
 import { animateScroll as scroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
@@ -23,6 +24,7 @@ function App() {
   }, [isIpad]);
   return (
     <div className="App">
+      {/* <LoadingPage /> */}
       <Nav scrollTo={scrollTo} toggleNav={setNavOn} navOn={navOn} isIpad={isIpad} />
       <LandingPage scrollTo={scrollTo} />
       <About />

@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 function Nav({ scrollTo, navOn, toggleNav, isIpad }) {
   const navVariants = {
     hidden: {
-      x: "-100vw",
+      x: "0",
       transition: {
         duration: 0.5,
         ease: "easeInOut",
