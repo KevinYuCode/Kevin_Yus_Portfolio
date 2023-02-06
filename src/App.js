@@ -5,7 +5,7 @@ import About from "./views/About";
 import Work from "./views/Work";
 import Projects from "./views/Projects";
 import Contact from "./views/Contact";
-import LoadingPage from "./views/LoadingPage";
+// import LoadingPage from "./views/LoadingPage";
 import { animateScroll as scroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
