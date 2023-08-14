@@ -13,6 +13,7 @@ function Contact() {
         </p>
         <a href="mailto: yu.kevin2002@gmail.com">Say Hi</a>
         <Footer />
+
       </Container>
     </div>
   );

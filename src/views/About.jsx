@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Profile_Picture from "../assets/Profile_Picture.jpg";
 function about() {
   return (
-    <div id="about" className="about-container full-s-h">
+    <div id="about" className="about-container">
       <Container classProp="about">
         <div className="about-title row-fs-c">
           <h1>About Me</h1>
@@ -29,14 +29,14 @@ function about() {
           </p>
           <ul>
             {[
-              "React.js/Next.js",
+              "Next.js",
+              "Angular",
               "Node.js",
               "Python",
+              ".NET6",
               "Tailwind",
               "Firebase",
-              "Linux",
               "C/C++",
-              "Verilog",
             ].map((tech) => (
               <li>{tech}</li>
             ))}
