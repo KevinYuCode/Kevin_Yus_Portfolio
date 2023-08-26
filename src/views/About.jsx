@@ -9,20 +9,29 @@ function about() {
           <h1>About Me</h1>
         </div>
         <div className="about-content col-c-fs">
+          <p className="!font-bold">Howdy 👋!</p>
           <p>
-            Hi! My name is Kevin Yu; I'm a Computer Engineering student at
-            Queens University. I developed a passion for engineering in the 10th
-            grade when I made an LED turn on with some copied and pasted code I
-            found online that I uploaded to a microcontroller. Since that day, I
-            developed a passion for computer technology, which has led me to
-            explore topics such as web-development, electronics, computer
-            networks, and even entrepreneurship in the tech industry.
+            My name is Kevin Yu, I'm a 4th year Computer Engineering 💻 Student
+            at Queens University. Besides being a programmer, I'm an active
+            long-distance runner 🏃, I enjoy reading non-fiction books 📚 about
+            psychology and self improvement, and I dabble here and there into
+            UI/UX design 🎨.
           </p>
           <p>
-            Fast forward to today, I have had the opportunity to exercise my
-            technical skills through designing and developing websites for
-            clients and committees, competing in hackathons, working in the
-            startup industry, as well as building my own small tech startup.
+            Now, I decided on Computer Engineering 🔌 as a career option because
+            I've always dreamt of building cool technology 📱 that could impact
+            me or someone else in their day to day lives. This ambition of mine
+            has lead me down ventures such as working at a small startup
+            company, competing in hackathons, developing websites, building
+            order management systems for clients as well as working as a
+            software engineering intern.
+          </p>
+          <p>
+            Recently, I just finished my internship at PWC
+            (PricewaterhouseCoopers) working as a software engineering intern,
+            and now I'm finishing up my senior year of university. We'll see
+            where life takes me from here, but I'm excited for whatever life
+            throws my way 🎓!
           </p>
           <p className="about-technologies">
             Here are a few technologies I've been working with recently:
