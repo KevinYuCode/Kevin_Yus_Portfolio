@@ -3,7 +3,7 @@ export const WORK_EXPERIENCE = [
     company: "PWC",
     position: "Software Engineer Intern",
     timeline: "May 2023 - August 2023",
-    technologies: ["React.js", "Tailwind.css", "Sass", "SEO"],
+    technologies: ["Angular", "Sass", ".NET6", "SQL", "Azure Dev Ops"],
     highlights: [
       "Worked on a full-stack internal web application for file sharing, serving 7800+ PWC employees and clients.",
       "Developed and enhanced UI pages and components while building reusable services to reduce code duplication",
