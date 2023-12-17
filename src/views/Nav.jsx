@@ -88,7 +88,7 @@ function Nav({ scrollTo, navOn, toggleNav, isIpad }) {
                   >
                     Contact
                   </button>
-                  <a href="Kevin_Yus_Resume.pdf" download="Kevin_Yus_Resume">
+                  <a href="/Kevin_Yus_Resume.pdf" target="_blank">
                     Resume
                   </a>
                 </div>
