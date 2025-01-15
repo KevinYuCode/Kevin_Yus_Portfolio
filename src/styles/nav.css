@@ -16,7 +16,8 @@
     backdrop-filter: blur(12.8px);
   }
 }
-.nav-toggle {
+.nav-toggle,
+.nav-close {
   display: none;
   @media only screen and (max-width: 900px) {
     display: flex;
@@ -31,12 +32,9 @@
     top: 1.2rem;
     right: 1.2rem;
     font-size: 1.9rem;
-    // display: flex;
   }
 }
-.nav-close {
-  @extend .nav-toggle;
-}
+
 .nav {
   @media only screen and (max-width: 900px) {
     flex-direction: column;
@@ -81,7 +79,6 @@
   }
   @media only screen and (max-width: 600px) {
     row-gap: 2rem;
-
   }
   button,
   a {
@@ -94,8 +91,7 @@
     @media only screen and (max-width: 600px) {
       font-size: 1.2rem;
     }
-    outline:none;
-    
+    outline: none;
   }
   a:nth-child(5) {
     border: 2px solid black;
@@ -105,7 +101,7 @@
     transition: all 0.4s;
     background-color: rgba(0, 0, 0, 0.05);
     &:hover {
-      background-color: rgba(0,0,0,.2);
+      background-color: rgba(0, 0, 0, 0.2);
       color: white;
     }
   }

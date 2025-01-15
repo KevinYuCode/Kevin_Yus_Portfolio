@@ -39,12 +39,3 @@ h1 {
     font-size: 2rem;
   }
 }
-@import "customStyles.scss";
-@import "container.scss";
-@import "landingPage.scss";
-@import "nav.scss";
-@import "about.scss";
-@import "work.scss";
-@import "projects.scss";
-@import "contact.scss";
-@import "footer.scss";
