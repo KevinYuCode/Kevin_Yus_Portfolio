@@ -22,19 +22,18 @@
 
  /* Hide scrollbar for Chrome, Safari and Opera */
  .work-list::-webkit-scrollbar {
-  display: none;
+  scrollbar-width: thin;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .work-list {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  scrollbar-width: thin;  /* Firefox */
 } 
 .work-list {
   width: clamp(300px, auto, 1400px);
   overflow-x: scroll;
   overflow-y: hidden;
-  scrollbar-width: none;
+  scrollbar-width: thin;
   align-items: stretch;
   column-gap: 2rem;
   position: relative;

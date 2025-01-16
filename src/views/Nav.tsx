@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import { BiMenuAltRight } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 import { motion, AnimatePresence } from "framer-motion";
-function Nav({ scrollTo, navOn, toggleNav, isIpad }) {
+function Nav({ scrollTo, navOn, toggleNav, isIpad }: any) {
   const navVariants = {
     hidden: {
       x: "0",
@@ -88,7 +88,7 @@ function Nav({ scrollTo, navOn, toggleNav, isIpad }) {
                   >
                     Contact
                   </button>
-                  <a href="/Kevin_Yus_Resume.pdf" target="_blank">
+                  <a href="/Kevins-Resume.pdf" target="_blank" className="rounded-[0.5rem] px-4 py-2">
                     Resume
                   </a>
                 </div>

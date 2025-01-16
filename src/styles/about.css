@@ -2,7 +2,7 @@
   padding-top: 3rem;
   @media only screen and (max-width: 600px) {
     height: 100%;
-    padding:0 0 5rem 0;
+    padding: 0 0 5rem 0;
   }
   min-height: 100vh;
 }
@@ -37,11 +37,7 @@
   height: 100%;
   margin: auto 0;
   color: rgba(0, 0, 0, 0.6);
-  @media only screen and (max-width: 1100px) {
-    align-items: center;
-  }
   p {
-    text-align: left;
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 30px;
@@ -55,7 +51,7 @@
     }
     @media only screen and (max-width: 900px) {
       font-size: 1.2rem;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
     @media only screen and (max-width: 600px) {
       line-height: 22px;
@@ -81,14 +77,12 @@
       list-style-type: none;
       margin-top: 0;
       padding: 0;
-      justify-items: center;
     }
     @media only screen and (max-width: 900px) {
       grid-column-gap: 1.3rem;
     }
     @media only screen and (max-width: 600px) {
       grid-template-columns: repeat(2, auto);
-      justify-items: flex-start;
     }
     li {
       font-size: 1.1rem;
@@ -109,12 +103,13 @@
 
 .about-image {
   justify-self: flex-end;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 0.5rem;
   @media only screen and (max-width: 1100px) {
     justify-self: center;
   }
-  
+
   img {
     object-fit: cover;
     object-position: bottom;

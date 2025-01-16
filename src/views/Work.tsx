@@ -13,16 +13,22 @@ function Work() {
         </div>
 
         {/* Work Content */}
-        <div className="work-content col-c-fs">
+        <div className="work-content flex flex-col !gap-2">
           {/* Work Tabs */}
-          <div className="work-list row-fs-c">
-            {WORK_EXPERIENCE.map((work) => (
+          <div className="work-list overflow-auto flex max-w-full scroll pb-3">
+            {WORK_EXPERIENCE.map((work, i) => (
               <button
-                className="work-name"
+                key={i}
+                className="work-name text-nowrap"
                 onClick={() => {
                   setWorkDetails(work);
                 }}
-                style={{borderBottom: workDetails.company === work.company? "solid 2px #059f76": "solid 2px white" }}
+                style={{
+                  borderBottom:
+                    workDetails.company === work.company
+                      ? "solid 2px #059f76"
+                      : "solid 2px white",
+                }}
               >
                 {work.company}
               </button>
@@ -36,20 +42,21 @@ function Work() {
               {workDetails.position}{" "}
               <span className="work-company">
                 @ {workDetails.company}
-                {workDetails.company === "NOMAD" && " - Acquired by WISH STR Enterprises"}
+                {workDetails.company === "NOMAD" &&
+                  " - Acquired by WISH STR Enterprises"}
               </span>
             </h2>
             <h4 className="work-time-line">{workDetails.timeline}</h4>
             <div className="work-technologies row-se-c">
               {workDetails.technologies.map((tech) => (
-                <p>{tech}</p>
+                <p className="!text-sm" key={tech}>{tech}</p>
               ))}
             </div>
 
             {/* Highlights */}
             <ul className="work-highlights-container col-c-fs">
               {workDetails.highlights.map((highlight) => (
-                <li>{highlight}</li>
+                <li className="list-disc ml-7" key={highlight}>{highlight}</li>
               ))}
             </ul>
 

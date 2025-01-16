@@ -95,9 +95,7 @@
   }
   a:nth-child(5) {
     border: 2px solid black;
-    padding: 0.5rem;
     box-sizing: border-box;
-    border-radius: 0.2rem;
     transition: all 0.4s;
     background-color: rgba(0, 0, 0, 0.05);
     &:hover {

@@ -44,7 +44,7 @@ function LandingPage({ scrollTo }) {
           speed={1}
         ></TypeAnimation>
 
-        <h3>Computer Engineer & Full-Stack Developer</h3>
+        <h3>Computer Engineer & Software Developer</h3>
         <motion.button
           onClick={() => {
             scrollTo("about");
