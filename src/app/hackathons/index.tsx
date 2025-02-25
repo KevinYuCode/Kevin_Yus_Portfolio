@@ -59,7 +59,7 @@ const hackathons = [
   },
   {
     title: "NewHacks",
-    image: "/images/money-hack.png",
+    image: "/images/note-hack.png",
     subHeading: "3rd Place Overall",
     date: "2021",
     description:
@@ -83,7 +83,7 @@ function Hacakthons() {
             </div>
             <CardHeader>
               <CardTitle>{hackathon.title}</CardTitle>
-              <CardDescription>
+              <CardDescription className="flex flex-col gap-2">
                 {hackathon?.subHeading && (
                   <Label>{hackathon?.subHeading}</Label>
                 )}
