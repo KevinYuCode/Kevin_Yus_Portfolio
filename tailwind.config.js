@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: ["class"],
-    content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  darkMode: ["class"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
   	extend: {
+  		textShadow: {
+  			outline: '2px 2px 0px black, -2px -2px 0px black, -2px 2px 0px black, 2px -2px 0px black'
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
@@ -66,5 +66,8 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwindcss-textshadow"), // Install via npm if needed
+  ],
+};

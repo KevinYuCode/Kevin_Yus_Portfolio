@@ -1,0 +1,161 @@
+import React from "react";
+const jobs = [
+  {
+    title: "Software Developer",
+    company: "Conflict Analytics",
+    startDate: "Feb 2024",
+    endDate: "Jan 2025",
+    logo: "/images/open-justice.png",
+    technologies: [
+      "Next.JS",
+      "Azure",
+      "LangChain",
+      "Pinecone",
+      "Python",
+      "Selenium",
+      "Web Security",
+      "JWT",
+    ],
+    description: [
+      "• Designed and developed a RAG AI-chatbot web application using Next.JS, OpenAI, and Pinecone",
+      "• Web scraped and vectorized 500+ law documents to implement RAG using Python and Selenium",
+      "• Created RESTful API endpoints to stream RAG-generated LLM responses using Next.JS and LangChain",
+      "• Configured an Azure VPS and set up the cloud network to deliver HTTP traffic to a Flask server",
+      "• Implemented JWT authentication for APIs and web services to prevent unauthorized access to resources",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company: "Distributive",
+    startDate: "Jan 2023",
+    endDate: "Oct 2024",
+    logo: "/images/DCP.png",
+    technologies: [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "UI/UX",
+      "i18n",
+      "a11y",
+      "Playwright",
+    ],
+    description: [
+      "• Collaborated with the CTO to architect two React applications to organize code modularity and re-usability",
+      "• Presented my work directly to the CEO, helping him attract leads such as Bell, Nokia, and Vector Institute",
+      "• Contributed to UI/UX design by improving HTML semantics and writing automated Playwright tests",
+      "• Added i18n and a11y attributes to support language localization and accessibility standards",
+    ],
+  },
+  {
+    title: "Software Consultant",
+    company: "Smith School of Business",
+    startDate: "June 2024",
+    endDate: "Sept 2024",
+    logo: "/images/smith.png",
+    technologies: [
+      "Next.JS",
+      "TypeScript",
+      "Zod",
+      "SQLite",
+      "Sequelize",
+      "Docker",
+      "Google Search API",
+    ],
+    description: [
+      "• Built a privacy-focused, offline, Next.JS application to manage student profiles in an SQLite database",
+      "• Used React Hook Form and Zod to allow professors to upload their class CSV files into the application",
+      "• Utilized Google Search API and ProxyCurl to find LinkedIn URLs and fetch public student information",
+      "• Recruited a developer and delegated workloads to Dockerize the application, enabling smooth deployment",
+    ],
+  },
+  {
+    title: "Software Engineering Intern",
+    company: "PwC",
+    startDate: "May 2023",
+    endDate: "Sept 2023",
+    logo: "/images/pwc.png",
+    technologies: ["Angular", ".NET6", "MySQL", "HTML", "CSS"],
+    description: [
+      "• Developed an internal file-sharing web application using Angular, serving 7,800 employees",
+      "• Created dynamic email templates using .NET6, HTML, and CSS, reducing manual email creation",
+      "• Wrote pre-deployment SQL scripts to automatically update email templates whenever changes were made",
+    ],
+  },
+  {
+    title: "Co-Founder, CTO",
+    company: "Ivory OMS",
+    startDate: "May 2022",
+    endDate: "Sept 2022",
+    logo: "/images/printer.png",
+    technologies: [
+      "React",
+      "Node.js",
+      "Firebase",
+      "Express",
+      "PM2",
+      "R-Pi",
+      "Git",
+    ],
+    description: [
+      "• Created a React-based order management system for four restaurants, reducing service time by 60%",
+      "• Implemented error monitoring for printer failures using Firebase, improving error detection and debugging",
+      "• Developed a Node.js script on an R-Pi to print to a thermal printer, reducing order creation time by 98.3%",
+      "• Adapted to evolving client requirements by using Git’s cherry-pick command to select implemented features",
+    ],
+  },
+];
+
+function Work() {
+  return (
+    <div>
+      <h2 className="text-4xl">Work Experience</h2>
+      <section className="mt-10 flex flex-col gap-8">
+        {jobs.map((job) => (
+          <div
+            key={job.company}
+            className="border-border border-b-2 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 items-start pb-10"
+          >
+            {/* Company Logo */}
+            <div className="border-border border-2 p-2 rounded-lg">
+              <img
+                className="w-10 h-10 object-contain"
+                src={job.logo}
+                alt={job.company}
+              />
+            </div>
+            {/* Job Title and Company */}
+            <div className="flex flex-col gap-0">
+              <span className="text-xl text-gray-500 col-start-3 block">
+                {job.startDate} - {job.endDate}
+              </span>
+              <h3 className="text-2xl">
+                {job.title} at <b>{job.company}</b>{" "}
+              </h3>
+              {/* Technologies */}
+              <div className="flex flex-wrap gap-2 col-start-2 row-start-2">
+                {job?.technologies?.map((tech, i) => (
+                  <p className="text-xl text-blue-400" key={tech}>
+                    {tech}
+                    {i !== job.technologies.length - 1 ? "," : ""}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            {/* Job Description */}
+            <div className="flex flex-col gap-2 col-start-2 row-start-3">
+              {job.description?.map((desc) => (
+                <p className="text-xl text-gray-500 " key={desc}>
+                  {desc}
+                </p>
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
+}
+
+export default Work;

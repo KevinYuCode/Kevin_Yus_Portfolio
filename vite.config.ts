@@ -1,6 +1,7 @@
 // vite.config.ts
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc"; // or '@vitejs/plugin-react'
+import path from "path";
 
 export default defineConfig({
   plugins: [react()],
@@ -10,7 +11,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": "/src",
+      "@": path.resolve(__dirname, "src"), // Ensure this points correctly to "src"
     },
   },
   // Additional config here if needed
