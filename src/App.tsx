@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { Layout } from "./components/ui/layout";
 import { Navigation } from "./features/nav/components/nav";
 import { Home } from "./app/home";

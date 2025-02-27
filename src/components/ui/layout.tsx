@@ -6,19 +6,6 @@ const Layout = React.forwardRef<
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
   <>
-    <svg style={{ position: "absolute", width: 0, height: 0 }}>
-      <filter id="noise">
-        <feTurbulence
-          type="fractalNoise"
-          baseFrequency="0.6" /* Adjust this for more/less grain */
-          numOctaves="6" /* Higher values add finer details */
-          stitchTiles="stitch"
-        />
-        <feComponentTransfer>
-          <feFuncA type="linear" slope=".4" />
-        </feComponentTransfer>
-      </filter>
-    </svg>
     <span className="grainy-background" />
     <div
       ref={ref}
