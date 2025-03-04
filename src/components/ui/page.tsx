@@ -41,7 +41,7 @@ const PageTitle = forwardRef<
 >(({ className, ...props }, ref) => (
   <h2
     ref={ref}
-    className={cn("text-7xl lg:text-5xl font-semibold", className)}
+    className={cn("text-2xl lg:text-5xl font-semibold", className)}
     {...props}
   />
 ));

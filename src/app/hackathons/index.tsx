@@ -79,7 +79,7 @@ function Hacakthons() {
   return (
     <div className="mt-10">
       <PageTitle>Hackathons</PageTitle>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-8 mt-10">
         {hackathons.map((hackathon) => (
           <a
             href={hackathon.link}
@@ -87,26 +87,28 @@ function Hacakthons() {
             rel="noopener noreferrer"
             key={hackathon.description}
           >
-            <Card className="h-full hover:scale-[1.01] transition-all duration-200 p-8 lg:p-4">
+            <Card className="h-full hover:scale-[1.01] transition-all duration-200 p-4 md:p-4 rounded-md md:rounded-lg flex flex-col gap-y-2">
               <img
                 src={hackathon.image}
                 alt={hackathon.title}
-                className="object-cover rounded-xl lg:rounded-lg shadow-sm h-[420px] lg:h-[220px] w-full border-border border-[1px]"
+                className="object-cover rounded-md md:rounded-lg shadow-sm h-[160px] md:h-[480px] w-full border-border border-[1px]"
               />
-              <CardHeader className="flex flex-col gap-4 lg:gap-0">
-                <CardTitle className="text-7xl lg:text-2xl">
+              <CardHeader className="flex flex-col p-0 md:p-6 md:pb-0">
+                <CardTitle className="text-xl md:text-2xl font-normal underline-offset-4 underline">
                   {hackathon.title} - {hackathon.date}
                 </CardTitle>
-                <CardDescription className="flex items-center">
-                  {hackathon?.subHeading && (
-                    <Label className="text-4xl lg:text-xl">
-                      {hackathon?.subHeading}
-                    </Label>
-                  )}
-                </CardDescription>
+                {hackathon.description && (
+                  <CardDescription className="flex items-center">
+                    {hackathon?.subHeading && (
+                      <Label className="text-md md:text-xl">
+                        {hackathon?.subHeading}
+                      </Label>
+                    )}
+                  </CardDescription>
+                )}
               </CardHeader>
-              <CardContent>
-                <p className="text-5xl lg:text-2xl leading-normal">
+              <CardContent className="p-0 md:p-6">
+                <p className="text-md md:text-2xl leading-normal">
                   {hackathon.description}
                 </p>
               </CardContent>

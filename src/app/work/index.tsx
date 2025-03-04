@@ -115,33 +115,36 @@ function Work() {
         {jobs.map((job) => (
           <div
             key={job.company}
-            className="border-border border-b-2 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 items-start pb-10"
+            className="grid grid-cols-[auto_1fr] border-border border-b-2 gap-x-4 gap-y-2 pb-10"
           >
             {/* Company Logo */}
-            <div className="border-border border-2 p-2 rounded-lg">
+            <div className="border-border border-2 p-2 rounded-lg flex col-start-1 self-start">
               <img
-                className="w-12 lg:w-16 h-12 lg:h-16 object-contain"
+                className="w-9 md:w-16 h-9 md:h-16 object-contain"
                 src={job.logo}
                 alt={job.company}
               />
             </div>
+
             {/* Job Title and Company */}
-            <div className="flex flex-col gap-4 lg:gap-2">
+            <div className="flex flex-col col-start-1 md:col-start-2 row-start-2 md:row-start-1 col-span-2 md:col-span-1 gap-y-2">
               {/* Start and End Date */}
-              <span className="text-4xl lg:text-2xl text-gray-500 col-start-3 block">
+              <span className="text-md md:text-2xl text-gray-500">
                 {job.startDate} - {job.endDate}
               </span>
+
               {/* Job Title and Company */}
-              <h3 className="text-5xl lg:text-3xl">
+              <h3 className="text-lg md:text-3xl">
                 {job.title} at{" "}
                 <span className="italic underline-offset-4 underline">
                   {job.company}
                 </span>{" "}
               </h3>
+
               {/* Technologies */}
-              <div className="flex flex-wrap gap-2 col-start-2 row-start-2">
+              <div className="flex flex-wrap gap-x-2">
                 {job?.technologies?.map((tech, i) => (
-                  <p className="text-4xl lg:text-2xl text-blue-400" key={tech}>
+                  <p className="text-md md:text-2xl text-blue-400" key={tech}>
                     {tech}
                     {i !== job.technologies.length - 1 ? "," : ""}
                   </p>
@@ -150,9 +153,9 @@ function Work() {
             </div>
 
             {/* Job Description */}
-            <ul className="flex flex-col gap-8 lg:gap-2 col-start-2 row-start-3 list-disc ml-8">
+            <ul className="flex flex-col gap-2 list-disc ml-8 mt-4 col-start-1 col-span-2 md:col-span-1 md:col-start-2 ">
               {job.description?.map((desc) => (
-                <li className="text-4xl lg:text-2xl text-gray-500 " key={desc}>
+                <li className="text-sm md:text-2xl text-gray-500 " key={desc}>
                   {desc}
                 </li>
               ))}
