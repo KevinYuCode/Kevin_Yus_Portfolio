@@ -79,7 +79,7 @@ function Hacakthons() {
   return (
     <div className="mt-10">
       <PageTitle>Hackathons</PageTitle>
-      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 3xl:grid-cols-4 gap-8 mt-10">
         {hackathons.map((hackathon) => (
           <a
             href={hackathon.link}
@@ -91,7 +91,7 @@ function Hacakthons() {
               <img
                 src={hackathon.image}
                 alt={hackathon.title}
-                className="object-cover rounded-md md:rounded-lg shadow-sm h-[160px] md:h-[480px] w-full border-border border-[1px]"
+                className="object-cover rounded-md md:rounded-lg shadow-sm h-[160px] md:h-[280px] w-full border-border border-[1px]"
               />
               <CardHeader className="flex flex-col p-0 md:p-6 md:pb-0">
                 <CardTitle className="text-xl md:text-2xl font-normal underline-offset-4 underline">
@@ -100,7 +100,7 @@ function Hacakthons() {
                 {hackathon.description && (
                   <CardDescription className="flex items-center">
                     {hackathon?.subHeading && (
-                      <Label className="text-md md:text-xl">
+                      <Label className="text-md md:text-lg">
                         {hackathon?.subHeading}
                       </Label>
                     )}
@@ -108,7 +108,7 @@ function Hacakthons() {
                 )}
               </CardHeader>
               <CardContent className="p-0 md:p-6">
-                <p className="text-md md:text-2xl leading-normal">
+                <p className="text-md md:text-lg leading-normal">
                   {hackathon.description}
                 </p>
               </CardContent>

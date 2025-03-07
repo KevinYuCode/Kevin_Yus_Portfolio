@@ -120,7 +120,7 @@ function Work() {
             {/* Company Logo */}
             <div className="border-border border-2 p-2 rounded-lg flex col-start-1 self-start">
               <img
-                className="w-9 md:w-16 h-9 md:h-16 object-contain"
+                className="w-9 md:w-12 h-9 md:h-12 object-contain"
                 src={job.logo}
                 alt={job.company}
               />
@@ -129,12 +129,12 @@ function Work() {
             {/* Job Title and Company */}
             <div className="flex flex-col col-start-1 md:col-start-2 row-start-2 md:row-start-1 col-span-2 md:col-span-1 gap-y-2">
               {/* Start and End Date */}
-              <span className="text-md md:text-2xl text-gray-500">
+              <span className="text-md md:text-xl text-gray-500">
                 {job.startDate} - {job.endDate}
               </span>
 
               {/* Job Title and Company */}
-              <h3 className="text-lg md:text-3xl">
+              <h3 className="text-lg md:text-xl">
                 {job.title} at{" "}
                 <span className="italic underline-offset-4 underline">
                   {job.company}
@@ -144,7 +144,7 @@ function Work() {
               {/* Technologies */}
               <div className="flex flex-wrap gap-x-2">
                 {job?.technologies?.map((tech, i) => (
-                  <p className="text-md md:text-2xl text-blue-400" key={tech}>
+                  <p className="text-md md:text-xl text-blue-600" key={tech}>
                     {tech}
                     {i !== job.technologies.length - 1 ? "," : ""}
                   </p>
@@ -155,7 +155,7 @@ function Work() {
             {/* Job Description */}
             <ul className="flex flex-col gap-2 list-disc ml-8 mt-4 col-start-1 col-span-2 md:col-span-1 md:col-start-2 ">
               {job.description?.map((desc) => (
-                <li className="text-sm md:text-2xl text-gray-500 " key={desc}>
+                <li className="text-sm md:text-xl text-gray-700 " key={desc}>
                   {desc}
                 </li>
               ))}

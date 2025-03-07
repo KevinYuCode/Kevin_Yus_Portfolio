@@ -60,7 +60,7 @@
     "zod": "^3.24.1"
   },
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "test": "react-scripts test",

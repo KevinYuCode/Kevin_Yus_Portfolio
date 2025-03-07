@@ -10,7 +10,7 @@ const Layout = React.forwardRef<
     <div
       ref={ref}
       className={cn(
-        "min-h-svh h-full flex flex-col px-6 md:px-20 md:py-10 py-8 z-10",
+        "min-h-svh h-full flex flex-col px-6 md:px-20 md:py-10 py-8 z-10 w-[90vw] max-w-[2600px] mx-auto",
         className
       )}
       {...props}
